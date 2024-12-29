@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab14</title>
+    <style>
+        /* Basic styling */
+        body {font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;}
+
+        header {text-align: center;
+            background-color: #ff0000;
+            color: white;
+            padding: 20px;}
+        header h1 {margin: 0;
+            font-size: 2.5rem;}
+        .container {display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px;}
+        .driver-card {background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            max-width: 300px;
+            text-align: center;}
+        .driver-card img {width: 100%;
+            height: auto;}
+        .driver-card:hover {transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);}
+        .driver-card h2 {color: #333;
+            margin: 10px 0;
+            font-size: 1.5rem;}
+        .driver-card p {color: #666;
+            padding: 0 15px 15px;}
+        footer {text-align: center;
+            background-color: #222;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;}
+        @media (max-width: 768px) {
+            .driver-card {max-width: 90%;}}
+        @media (max-width: 480px) {
+            header h1 {font-size: 2rem;}}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Top 5 F1 Drivers of All Time</h1>
+    </header>
+
+    <div class="container">
+        <!-- Driver 1 -->
+        <div class="driver-card">
+            <img src="./Lewis Hamilton Wallpaper.jpeg" alt="Lewis Hamilton">
+            <h2>Lewis Hamilton</h2>
+            <p>7-time World Champion with 103 Grand Prix wins. A modern F1 legend.</p>
+        </div>
+
+        <!-- Driver 2 -->
+        <div class="driver-card">
+            <img src="./Michael Schumacher — Ferrari.jpeg" alt="Michael Schumacher">
+            <h2>Michael Schumacher</h2>
+            <p>7-time World Champion and Ferrari icon with unmatched dominance in the early 2000s.</p>
+        </div>
+
+        <!-- Driver 3 -->
+        <div class="driver-card">
+            <img src="./Légendes de la Piste _ Pilotes Recordmans en F1.jpeg" alt="Juan Manuel Fangio">
+            <h2>Juan Manuel Fangio</h2>
+            <p>5-time World Champion who set the benchmark for excellence in the 1950s.</p>
+        </div>
+       
+
+        <!-- Driver 4 -->
+        <div class="driver-card">
+            <img src="./Alain Prost - Formula 1 Wallpaper _ Aesthetic Wallpaper Background.jpeg" alt="Alain Prost">
+            <h2>Alain Prost</h2>
+            <p>4-time World Champion and known as "The Professor" for his strategic driving.</p>
+        </div>
+
+        <!-- Driver 5 -->
+        <div class="driver-card">
+            <img src="./Ayrton Senna Wallpaper – Racing's Greatest Icon.jpeg" alt="Ayrton Senna">
+            <h2>Ayrton Senna</h2>
+            <p>3-time World Champion known for his incredible skill in wet conditions.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Formula 1 Legends</p>
+    </footer>
+</body>
+</html>
